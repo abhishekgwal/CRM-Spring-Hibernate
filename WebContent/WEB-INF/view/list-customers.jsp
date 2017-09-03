@@ -8,8 +8,7 @@
 	<title>List Customers</title>
 	<link type = "text/css"
 			rel = "stylesheet"
-			href = "${pageContext.request.contextPath}/resources/css/style.css" />
-	
+			href = "${pageContext.request.contextPath}/resources/css/style.css" />	
 </head>
 
 <body>
@@ -19,12 +18,16 @@
 			<h2>CRM - Customer Relationship Manager</h2>
 		</div>
 	</div>
+	<br>
+	<input type = "submit" value ="Add Customer"  
+	onClick = "window.location.href = 'showFormForAdd'" class = "add-button"/>
+	<br>
 	
 	<div id ="container">
 	
 		<div id = "content">
 		
-		<!-- Add html table here -->
+	<!-- Add html table here -->
 		
 		<table>
 				<tr>
