@@ -25,6 +25,9 @@
 			
 	<br>
 	<form:form action="processForm" modelAttribute="customers" method = "POST">
+	
+	<!--Line 30: V. Imp for updating the current rows. Line 30, associates data with customer Id  -->
+	<form:hidden path = "id"/>
 		First Name: <form:input path="firstName"  placeholder="First Name"/>
 	<br><br>
 	 	Last Name: <form:input path="lastName" placeholder="Last Name"/>
