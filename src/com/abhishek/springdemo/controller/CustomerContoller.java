@@ -64,4 +64,14 @@ public class CustomerContoller {
 		return "customer-form";
 	}
 	
+	@GetMapping("/deleteForm")
+	public String deleteForm(@RequestParam("customerId") int theId) {
+		
+		//get the customer from the service
+		customerService.deleteCustomer(theId);
+		
+		return "redirect:/customer/list";
+		
+	}
+	
 }
